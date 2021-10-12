@@ -57,13 +57,10 @@
             function x(a1){
                 //Function boyd
 
-                //Function is returning somthing
                 return document.querySelector(a1);
             }
             //1. Function Defination
-            function startFan(speed){ // speed is formal arg/params
-                   //We have to check some condition
-                   //if  else if else if ... else Ladder
+            function startFan(speed){
                    if(speed == 0){
                         x('.Fan').style.animationPlayState = 'paused';
                         x('[onclick="startFan(0)"]').style.backgroundPosition = '0px -5px';
@@ -75,16 +72,10 @@
                         //testing
                         x('[onclick="startFan(0)"]').style.backgroundPosition = '0px -78px';
                    }else if(speed == 2){
-                       // alert('2');
-
-                        //object.method()
                         x('[data-anil="myfanbox"]').style.animationPlayState = 'running';
                         x('[data-anil="myfanbox"]').style.animationDuration = '0.5s';
                         x('[onclick="startFan(0)"]').style.backgroundPosition = '0px -78px';
                    }else{
-                       // alert('3');
-                       //object.member
-                       //object.method()
                        document.getElementById('fanbox').style.animationPlayState='running';
                        document.getElementById('fanbox').style.animationDuration='0.1s';
                        x('[onclick="startFan(0)"]').style.backgroundPosition = '0px -78px';
